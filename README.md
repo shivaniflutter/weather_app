@@ -30,8 +30,10 @@ flutter pub get
 
 3. Set Up API Key
 Open the file lib/services/weather_service.dart.
+Replace YOUR_OPENWEATHERMAP_API_KEY with your actual OpenWeatherMap API key.
+
 class WeatherService {
-  static const String apiKey = 'e2a4104430819b1c90900a0c9ae06c15'; // Replace with your OpenWeatherMap API key
+  static const String apiKey = 'YOUR_OPENWEATHERMAP_API_KEY'; // Replace with your OpenWeatherMap API key
   static const String baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
   Future<Map<String, dynamic>> fetchWeather(double lat, double lon) async {
